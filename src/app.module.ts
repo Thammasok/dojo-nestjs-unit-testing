@@ -1,14 +1,12 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { YutzeeController } from './yutzee/yutzee.controller';
-import { YutzeeService } from './yutzee/yutzee.service';
-import { YutzeeModule } from './yutzee/yutzee.module';
 import { FizzbuzzService } from './fizzbuzz/fizzbuzz.service';
+import { YahtzeeService } from './yahtzee/yahtzee.service';
 
 @Module({
-  imports: [YutzeeModule],
-  controllers: [AppController, YutzeeController],
-  providers: [AppService, YutzeeService, FizzbuzzService],
+  imports: [],
+  controllers: [AppController],
+  providers: [AppService, FizzbuzzService, YahtzeeService],
 })
 export class AppModule {}

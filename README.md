@@ -61,3 +61,4 @@ $ npm run test:cov
 ## Unit Testing
 
 - [FizzBuzz](./src/fizzbuzz/Readme.md)
+- [Yuhtzee](./src/yahtzee/Readme.md)
