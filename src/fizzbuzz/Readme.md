@@ -37,7 +37,7 @@ Output: "FizzBuzz"
 
 ## Test Cases
 
-| Input | Output |
+|     Input   |   Output    |
 | ----------- | ----------- |
 | 0 | "Input must be between 1 and 104" |
 | 1 | "1" |
