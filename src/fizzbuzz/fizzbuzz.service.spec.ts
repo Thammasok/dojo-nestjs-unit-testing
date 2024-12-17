@@ -43,8 +43,8 @@ describe('FizzbuzzService', () => {
 
   describe('the number is not divisible by 3 or 5', () => {
     it('should return the number when the number is not divisible by 3 or 5', () => {
-      const input = 7;
-      const expected = '7';
+      const input = 1;
+      const expected = '1';
 
       const result = service.fizzbuzz(input);
 
@@ -52,8 +52,8 @@ describe('FizzbuzzService', () => {
     });
 
     it('should return the number when the number is not divisible by 3 or 5', () => {
-      const input = 1;
-      const expected = '1';
+      const input = 7;
+      const expected = '7';
 
       const result = service.fizzbuzz(input);
 
@@ -70,7 +70,7 @@ describe('FizzbuzzService', () => {
     });
 
     it('should throw an error when the number is greater than 104', () => {
-      const input = 106;
+      const input = 105;
       const expected = 'Input must be between 1 and 104';
 
       expect(() => service.fizzbuzz(input)).toThrow(expected);
